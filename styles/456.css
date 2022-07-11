@@ -48,8 +48,7 @@
   transition: 1s;
 }
 .hero a:hover {
-  background-color: #fcfeff;
-  border-radius: 10px;
+  background-color: rgba(204, 243, 129, 0.8);
 }
 .hero ul {
   margin: 20px auto;
@@ -80,11 +79,29 @@
 }
 .play .space {
   height: 25vh;
+  width: 100%;
+  margin-bottom: 20px;
   background-color: #4831d4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.play .space h1 {
+  font-family: sf-ui-bold;
+  color: #ccf381;
+  font-size: 90px;
+}
+.play .space h3 {
+  color: #ccf381;
+  font-size: 50px;
 }
 .play a {
   text-decoration: none;
   color: #4831d4;
   background-color: #ccf381;
   padding: 10px 40px;
+  transition: 1s;
+}
+.play a:hover {
+  background-color: rgba(204, 243, 129, 0.8);
 }

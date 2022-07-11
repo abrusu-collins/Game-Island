@@ -25,8 +25,8 @@ justify-content: center;
     padding: 10px 15px;
     transition:  1s;
     &:hover{
-        background-color: $color;
-        border-radius: 10px;
+        background-color: rgba(204,243,129,.8);
+
     }
 }
 & ul{
