@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min (1).css">
+    <title>FastFingers</title>
+</head>
+<body>
+<style>
+body{
+    font-family: "Nunito", sans-serif;
+}
+    .topic{
+        background:#D5D8DC;
+        padding:10px;
+    }
+    #input{
+        width:40%;
+        margin:auto;
+    }
+    #controls{
+        display:  flex;
+        justify-content: space-around;
+        width:50%;
+        margin: 20px auto;
+    }
+    .btn {
+        display: block;
+        margin:20px  auto;
+    }
+    .card{
+        margin:40px auto;
+    }
+    @media(max-width:665px){
+        #input{
+            width:60%;
+        }
+    }
+
+    @media(max-width:320px){
+       .card{
+           width:90%;
+       }
+
+       
+    }
+
+    @media(max-width:548px){
+           #input{
+               width:80%;
+           }
+       }
+</style>
+
+<h3 class="text-center  topic">FastFingers</h3>    
+
+<h3 class="text-center mt-4" id="word">Click Start!</h3>
+<div class="form-group">
+    <input type="text" class="form-control" id="input"  placeholder="Type the word above...">
+  </div>
+  <button type="button" class="btn btn-primary start" id="start">START</button>
+ <div id="controls">
+    <p id="timeleft">Time Left: 5</p>
+    <p id="score">Score:0</p>
+ </div>
+
+
+    
+  
+<script src="app.js"></script>
+</body>
+</html>
