@@ -1,0 +1,35 @@
+
+.hero{
+font-family: sf-ui-regular;
+background-color: $background;
+color:$color;
+height: 50vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+& h1{
+    font-family: sf-ui-heavy;
+    font-size: 90px;
+    color: $nextcolor;
+}
+& h2{
+    color:$nextcolor;
+    font-size: 30px;
+}
+& a{
+    text-decoration: none;
+    display: block;
+    color:$background;
+    background-color: $nextcolor;
+    padding: 10px 15px;
+    transition:  1s;
+    &:hover{
+        background-color: $color;
+        border-radius: 10px;
+    }
+}
+& ul{
+    margin: 20px auto;
+}
+}

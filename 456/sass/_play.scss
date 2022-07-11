@@ -1,0 +1,23 @@
+.play{
+font-family: sf-ui-regular;
+height: 50vh;
+width:65%;
+margin: auto;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+& .space{
+    height:25vh;
+    background-color: $background;
+}
+
+    & a{
+       text-decoration: none;
+      color: $background;
+      background-color: $nextcolor;
+      padding: 10px 40px;
+    }
+}

@@ -1,0 +1,26 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+$background:#4831d4;
+$color: #fcfeff;
+$nextcolor:#ccf381;
+
+@font-face {
+    font-family: sf-ui-bold;
+    src: url("./Fonts/sf-ui-text-bold.woff");
+  }
+  @font-face {
+      font-family: sf-ui-regular;
+      src: url("./Fonts/sf-ui-text-regular.woff");
+    }
+    @font-face {
+      font-family: sf-ui-light;
+      src: url("./Fonts/sf-ui-text-light.woff");
+    }
+    @font-face {
+      font-family: sf-ui-heavy;
+      src: url("./Fonts/sf-ui-text-heavy.woff");
+    }

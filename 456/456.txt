@@ -1,0 +1,7 @@
+click get started
+move down and
+show loading for sometime 
+show game space + Play button
+Press Play
+
+Start displaying numbers
