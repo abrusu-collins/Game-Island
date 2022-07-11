@@ -1,6 +1,7 @@
 let num= document.getElementById("num");
 
 let numArray =["4","5","6"];
+let score = 0;
 
 //shuffle function
 function shuffle(array) {
@@ -24,16 +25,20 @@ function shuffle(array) {
     elementtodisplay += numtodisplay;
    }
    window.addEventListener("keydown",(e)=>{
-    if (parseInt(String.fromCharCode(e.keyCode)) == numcount){
+    if (parseInt(String.fromCharCode(e.keyCode)) === numcount){
+console.log(typeof(parseInt(String.fromCharCode(e.keyCode))))       
         numchange();
+        score=score +1;
+
     }
     else{
-        
+       console.log(" window.removeEventListener(keydown);")
     };
    })
    console.log(numtodisplay);
    console.log(numcount);
    console.log(elementtodisplay)
-  }
+   console.log(score)
+  };
 
   numchange();
