@@ -1,0 +1,32 @@
+.modal{
+    font-family: sf-ui-regular;
+    color: $nextcolor;
+    position: absolute;
+    top:0;
+    height:100vh;
+    width:100%;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & .modalinner {
+        background-color: $background;
+        width:40%;
+        margin:auto;
+        padding:40px;
+        text-align: center;
+        & h3{
+            margin:20px auto;
+        }
+
+        & h2{
+            font-size: 30px;
+        }
+        & a{
+            text-decoration: none;
+        color:$background;
+        background-color: $nextcolor;
+        padding:10px 20px;
+        }
+    }
+}
