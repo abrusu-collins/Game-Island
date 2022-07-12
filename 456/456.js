@@ -5,6 +5,9 @@ let play;
 let num;
 let space;
 let game;
+let numtodisplay;
+let numcount;
+let elementtodisplay;
 let numArray =["4","5","6"];
 let score = 0;
 
@@ -20,11 +23,8 @@ setTimeout(()=>{
   placeholder.innerHTML=`<div class="play">
   <div class="space" id="space">
   <h3>Click play to start</h3>
-  <!-- <h1>Get Ready</h1> -->
-  <!-- <h1 id="num">44444</h1> -->
-  </div>
+    </div>
   <a href="" id="play">Play</a>
-  
   </div>`
    play = document.getElementById("play");
    space= document.getElementById("space");
@@ -34,8 +34,22 @@ setTimeout(()=>{
 
   play.addEventListener("click",(e)=>{
     e.preventDefault();
-    setTimeout(()=>{numchange()},3000);
     space.innerHTML=`<h3>Get Ready!</h3>`;
+    setTimeout(()=>{
+      numchange();
+      window.addEventListener("keydown",(e)=>{
+        e.preventDefault();
+        if(parseInt(String.fromCharCode(e.keyCode))===numcount){
+          numchange();
+          console.log("working")
+        }
+        else{
+          alert("STOP")
+        }
+      });
+    
+    },3000);
+    
     });
 
 },3000);
@@ -58,9 +72,10 @@ function shuffle(array) {
 // function numchange
 function numchange(){
   shuffle(numArray)
-  let numtodisplay= parseInt(numArray[1]);
-  let numcount=parseInt(numArray[0]);
-  let elementtodisplay= '';
+   numtodisplay= parseInt(numArray[1]);
+   numcount=parseInt(numArray[0]);
+   elementtodisplay='';
+  
 
   console.log(`numtodisplay: ${numtodisplay}`);
   console.log(`numcount: ${numcount}`);
@@ -71,7 +86,7 @@ function numchange(){
 
 
   // num.textContent=`${elementtodisplay.trim()}`;
-  space.innerHTML= `   <h1 id="num">${elementtodisplay.trim()}</h1> `;
+  space.innerHTML= `<h1 id="num">${elementtodisplay.trim()}</h1> `;
   console.log(elementtodisplay.trim());
 
 }
