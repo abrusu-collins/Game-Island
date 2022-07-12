@@ -5,6 +5,8 @@ let play;
 let num;
 let space;
 let game;
+let numArray =["4","5","6"];
+let score = 0;
 
 //start click event
 start.addEventListener("click",(e)=>{
@@ -29,18 +31,18 @@ setTimeout(()=>{
     num= document.getElementById("num");
     game= document.getElementById("game");
 
-    
+
   play.addEventListener("click",(e)=>{
     e.preventDefault();
-    numchange();
+    setTimeout(()=>{numchange()},3000);
+    space.innerHTML=`<h3>Get Ready!</h3>`;
     });
 
 },3000);
 
 });
 
-let numArray =["4","5","6"];
-let score = 0;
+
 
 //shuffle function
 function shuffle(array) {
