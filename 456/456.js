@@ -15,3 +15,19 @@ function shuffle(array) {
   }
 
 // function numchange
+function numchange(){
+  shuffle(numArray)
+  let numtodisplay= parseInt(numArray[1]);
+  let numcount=parseInt(numArray[0]);
+  let elementtodisplay= '';
+
+  console.log(`numtodisplay: ${numtodisplay}`);
+  console.log(`numcount: ${numcount}`);
+
+  for(let i=0; i<numcount;i++){
+    elementtodisplay+= numtodisplay;
+  }
+  console.log(elementtodisplay.trim());
+
+}
+numchange();
