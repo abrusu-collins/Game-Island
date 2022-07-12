@@ -46,7 +46,13 @@ setTimeout(()=>{
           console.log(score);
         }
         else{
-          alert("STOP")
+         document.body.innerHTML += `<div class="modal" id="modal">
+         <div class="modalinner">
+             <h2>GAME OVER!</h2>
+         <h3>Score : ${score}</h3>
+         <a href="">Restart</a>
+         </div>
+     </div>`
         }
       });
     
