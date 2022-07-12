@@ -27,6 +27,9 @@
         color:$background;
         background-color: $nextcolor;
         padding:10px 20px;
+        &:hover{
+            background-color: rgba(204,243,129,.8);
+        }
         }
     }
 }

@@ -137,3 +137,6 @@
   background-color: #ccf381;
   padding: 10px 20px;
 }
+.modal .modalinner a:hover {
+  background-color: rgba(204, 243, 129, 0.8);
+}
