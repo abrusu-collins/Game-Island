@@ -40,8 +40,10 @@ setTimeout(()=>{
       window.addEventListener("keydown",(e)=>{
         e.preventDefault();
         if(parseInt(String.fromCharCode(e.keyCode))===numcount){
+          score++;
           numchange();
           console.log("working")
+          console.log(score);
         }
         else{
           alert("STOP")
