@@ -1,4 +1,26 @@
 let num= document.getElementById("num");
+let start = document.getElementById("start");
+let placeholder = document.getElementById("placeholder");
+
+
+//start click event
+start.addEventListener("click",(e)=>{
+e.preventDefault();
+placeholder.innerHTML =`<div class="load">
+<h3> Wait for game to load...</h3>
+ <img src="./img/load.svg" alt="load-animation">
+</div>`;
+setTimeout(()=>{
+  placeholder.innerHTML=`<div class="play">
+  <div class="space">
+  <h3>Click play to start</h3>
+  </div>
+  <a href="">Play</a>
+  
+  </div>`
+},3000)
+
+});
 
 let numArray =["4","5","6"];
 let score = 0;
