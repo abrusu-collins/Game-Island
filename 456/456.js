@@ -31,7 +31,7 @@ setTimeout(()=>{
     num= document.getElementById("num");
     game= document.getElementById("game");
 
-
+//play eventListener
   play.addEventListener("click",(e)=>{
     e.preventDefault();
     space.innerHTML=`<h3>Get Ready!</h3>`;
@@ -95,5 +95,5 @@ function numchange(){
 
 
 
-//play eventListener
+
 
