@@ -1,7 +1,10 @@
-let num= document.getElementById("num");
+
 let start = document.getElementById("start");
 let placeholder = document.getElementById("placeholder");
-
+let play;
+let num;
+let space;
+let game;
 
 //start click event
 start.addEventListener("click",(e)=>{
@@ -10,15 +13,29 @@ placeholder.innerHTML =`<div class="load">
 <h3> Wait for game to load...</h3>
  <img src="./img/load.svg" alt="load-animation">
 </div>`;
+
 setTimeout(()=>{
   placeholder.innerHTML=`<div class="play">
-  <div class="space">
+  <div class="space" id="space">
   <h3>Click play to start</h3>
+  <!-- <h1>Get Ready</h1> -->
+  <!-- <h1 id="num">44444</h1> -->
   </div>
-  <a href="">Play</a>
+  <a href="" id="play">Play</a>
   
   </div>`
-},3000)
+   play = document.getElementById("play");
+   space= document.getElementById("space");
+    num= document.getElementById("num");
+    game= document.getElementById("game");
+
+    
+  play.addEventListener("click",(e)=>{
+    e.preventDefault();
+    numchange();
+    });
+
+},3000);
 
 });
 
@@ -49,7 +66,15 @@ function numchange(){
   for(let i=0; i<numcount;i++){
     elementtodisplay+= numtodisplay;
   }
+
+
+  // num.textContent=`${elementtodisplay.trim()}`;
+  space.innerHTML= `   <h1 id="num">${elementtodisplay.trim()}</h1> `;
   console.log(elementtodisplay.trim());
 
 }
-numchange();
+
+
+
+//play eventListener
+
