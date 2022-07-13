@@ -8,3 +8,5 @@ A website which contains different  memory games
 7. Number guessing game
 8. Verbal memory
 Ame
+Add more games, the games should be 10
+NB: RPS and fast fingers need some debugging
