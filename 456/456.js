@@ -8,10 +8,11 @@ let game;
 let numtodisplay;
 let numcount;
 let elementtodisplay;
+let r;
 let numArray =["4","5","6"];
 let score = 0;
 let time=0;
-let r;
+
 
 //start click event
 start.addEventListener("click",(e)=>{
@@ -51,6 +52,8 @@ setTimeout(()=>{
          <a href="">Restart</a>
          </div>
      </div>`
+     time++;
+     clearInterval(r)
       }
      },1001);
         if(parseInt(String.fromCharCode(e.keyCode))===numcount){
