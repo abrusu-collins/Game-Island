@@ -10,6 +10,8 @@ let numcount;
 let elementtodisplay;
 let numArray =["4","5","6"];
 let score = 0;
+let time=0;
+let r;
 
 //start click event
 start.addEventListener("click",(e)=>{
@@ -39,13 +41,23 @@ setTimeout(()=>{
       numchange();
       window.addEventListener("keydown",(e)=>{
         e.preventDefault();
+
+     setInterval(()=>{
+      if(time===5){
+        console.log(`Time up`);
+      }
+     },1001);
         if(parseInt(String.fromCharCode(e.keyCode))===numcount){
           score++;
           numchange();
           console.log("working")
           console.log(score);
+          time=0;
+          clearInterval(r);
+          r=setInterval(()=>{time++ ;console.log(time)},1000);
         }
         else{
+          clearInterval(r);
          document.body.innerHTML += `<div class="modal" id="modal">
          <div class="modalinner">
              <h2>GAME OVER!</h2>
