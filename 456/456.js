@@ -62,8 +62,15 @@ setTimeout(()=>{
         restart.addEventListener("click",(e)=>{
          e.preventDefault();
          console.log("Restarted")
-         document.getElementById("space").innerHTML=`<h3>Click play to start</h3>`;
+       
          document.getElementById("modal").style.display="none";
+         document.getElementById("placeholder").innerHTML=`<div class="play">
+         <div class="space" id="space">
+         <h3>Click play to start</h3>
+           </div>
+         <a href="" id="play">Play</a>
+         </div>`
+         
         })
       }
      },1001);
