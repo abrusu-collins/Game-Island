@@ -57,22 +57,7 @@ setTimeout(()=>{
      clearInterval(r);
     
       }
-      if(time>=3){
-        restart= document.getElementById("restart");
-        restart.addEventListener("click",(e)=>{
-         e.preventDefault();
-         console.log("Restarted")
-       
-         document.getElementById("modal").style.display="none";
-         document.getElementById("placeholder").innerHTML=`<div class="play">
-         <div class="space" id="space">
-         <h3>Click play to start</h3>
-           </div>
-         <a href="" id="play">Play</a>
-         </div>`
-         
-        })
-      }
+    
      },1001);
         if(parseInt(String.fromCharCode(e.keyCode))===numcount){
           score++;
@@ -92,11 +77,7 @@ setTimeout(()=>{
          <a href="">Restart</a>
          </div>
      </div>`;
-     restart= document.getElementById("restart");
-     restart.addEventListener("click",(e)=>{
-      e.preventDefault();
-      space.innerHTML=`  <h3>Click play to start</h3>`
-     })
+  
         }
       });
     
