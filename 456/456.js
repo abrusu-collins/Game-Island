@@ -43,8 +43,14 @@ setTimeout(()=>{
         e.preventDefault();
 
      setInterval(()=>{
-      if(time===5){
-        console.log(`Time up`);
+      if(time===3){
+        document.body.innerHTML += `<div class="modal" id="modal">
+         <div class="modalinner">
+             <h2>GAME OVER!</h2>
+         <h3>Score : ${score}</h3>
+         <a href="">Restart</a>
+         </div>
+     </div>`
       }
      },1001);
         if(parseInt(String.fromCharCode(e.keyCode))===numcount){
