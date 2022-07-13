@@ -9,6 +9,7 @@ let numtodisplay;
 let numcount;
 let elementtodisplay;
 let r;
+let restart;
 let numArray =["4","5","6"];
 let score = 0;
 let time=0;
@@ -49,11 +50,19 @@ setTimeout(()=>{
          <div class="modalinner">
              <h2>GAME OVER!</h2>
          <h3>Score : ${score}</h3>
-         <a href="">Restart</a>
+         <a href="" id="restart">Restart</a>
          </div>
      </div>`
      time++;
-     clearInterval(r)
+     clearInterval(r);
+    
+      }
+      if(time===4){
+        restart= document.getElementById("restart");
+        restart.addEventListener("click",(e)=>{
+         e.preventDefault();
+         space.innerHTML=`<h3>Click play to start</h3>`
+        })
       }
      },1001);
         if(parseInt(String.fromCharCode(e.keyCode))===numcount){
@@ -73,7 +82,12 @@ setTimeout(()=>{
          <h3>Score : ${score}</h3>
          <a href="">Restart</a>
          </div>
-     </div>`
+     </div>`;
+     restart= document.getElementById("restart");
+     restart.addEventListener("click",(e)=>{
+      e.preventDefault();
+      space.innerHTML=`  <h3>Click play to start</h3>`
+     })
         }
       });
     
