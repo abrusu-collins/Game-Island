@@ -57,11 +57,13 @@ setTimeout(()=>{
      clearInterval(r);
     
       }
-      if(time===4){
+      if(time>=3){
         restart= document.getElementById("restart");
         restart.addEventListener("click",(e)=>{
          e.preventDefault();
-         space.innerHTML=`<h3>Click play to start</h3>`
+         console.log("Restarted")
+         document.getElementById("space").innerHTML=`<h3>Click play to start</h3>`;
+         document.getElementById("modal").style.display="none";
         })
       }
      },1001);
