@@ -1,6 +1,5 @@
 
-let start = document.getElementById("start");
-let placeholder = document.getElementById("placeholder");
+//variables
 let play;
 let num;
 let space;
@@ -10,6 +9,8 @@ let numcount;
 let elementtodisplay;
 let r;
 let restart;
+let start = document.getElementById("start");
+let placeholder = document.getElementById("placeholder");
 let numArray =["4","5","6"];
 let score = 0;
 let time=0;
@@ -53,12 +54,23 @@ setTimeout(()=>{
          <a href="" id="restart">Restart</a>
          </div>
      </div>`
+     restart= document.getElementById("restart");
      time++;
      clearInterval(r);
-    
       }
-    
      },1001);
+     
+
+setInterval(()=>{
+  if(time===4){
+    restart.addEventListener("click",(e)=>{
+      e.preventDefault();
+      document.getElementById("modal").style.display="none";
+play.click();
+    })
+  }
+},1001)
+
         if(parseInt(String.fromCharCode(e.keyCode))===numcount){
           score++;
           numchange();
@@ -74,9 +86,11 @@ setTimeout(()=>{
          <div class="modalinner">
              <h2>GAME OVER!</h2>
          <h3>Score : ${score}</h3>
-         <a href="">Restart</a>
+         <a href="" id= "restart">Restart</a>
          </div>
      </div>`;
+     restart= document.getElementById("restart");
+
   
         }
       });
@@ -116,7 +130,6 @@ function numchange(){
   for(let i=0; i<numcount;i++){
     elementtodisplay+= numtodisplay;
   }
-
 
   space.innerHTML= `<h1 id="num">${elementtodisplay.trim()}</h1> `;
   console.log(elementtodisplay.trim());
