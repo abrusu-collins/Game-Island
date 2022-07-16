@@ -60,16 +60,6 @@ setTimeout(()=>{
       }
      },1001);
      
-// Bug area
-setInterval(()=>{
-  if(time===4){
-    restart.addEventListener("click",(e)=>{
-      e.preventDefault();
-      document.getElementById("modal").style.display="none";
-play.click();
-    })
-  }
-},1001)
 
         if(parseInt(String.fromCharCode(e.keyCode))===numcount){
           score++;
@@ -103,7 +93,20 @@ play.click();
 
 });
 
+//bug area
+setInterval(()=>{
+  if(time===4){
+    restart.addEventListener("click",(e)=>{
+      e.preventDefault();
+      document.getElementById("modal").style.display="none";
+start.click();
+time=0;
+score=0;
+    })
+  }
+},1001);
 
+//end of bug area
 
 //shuffle function
 function shuffle(array) {
