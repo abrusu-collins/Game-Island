@@ -60,7 +60,7 @@ setTimeout(()=>{
       }
      },1001);
      
-
+// Bug area
 setInterval(()=>{
   if(time===4){
     restart.addEventListener("click",(e)=>{
