@@ -118,7 +118,6 @@ function numchange(){
   }
 
 
-  // num.textContent=`${elementtodisplay.trim()}`;
   space.innerHTML= `<h1 id="num">${elementtodisplay.trim()}</h1> `;
   console.log(elementtodisplay.trim());
 
