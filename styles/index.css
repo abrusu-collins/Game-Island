@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 html {
@@ -16,12 +16,6 @@ img {
 }
 
 /* navbar */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .container {
   max-width: 920px;
   margin: 0 auto;
@@ -140,7 +134,7 @@ nav.scrolled {
 }
 
 .c {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url("./img/greenpad.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./img/greenpad.jpg");
   height: 100vh;
   font-size: 30px;
   background-position: top;
@@ -156,4 +150,13 @@ nav.scrolled {
 
 .c a {
   color: white;
+  text-decoration: none;
+  background-color: #8fbf4d;
+  padding: 5px 10px;
+  border-radius: 7px;
+  margin: 20px auto;
+}
+
+.c h1 {
+  color: #8fbf4d;
 }

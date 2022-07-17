@@ -1,13 +1,7 @@
 
-
-*{
-	margin:0;
-	padding: 0;
-scroll-behavior: smooth;
-font-family: 'Space Grotesk', sans-serif;}
 html{
 	background-color:#ffffff  ;
-color: #000000;
+    color: #000000;
 }
 
 img{
@@ -17,12 +11,7 @@ img{
 
 /* navbar */
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-* {
-  margin: 0;
-  padding: 0;
-  
-  box-sizing: border-box;
-}
+
 .container {
   max-width: 920px;
   margin: 0 auto;
@@ -133,7 +122,7 @@ img{
 }
 
 .c{
-	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),url('./img/greenpad.jpg');
+	background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('./img/greenpad.jpg');
 	height:100vh;
     font-size: 30px;
 background-position:top;
@@ -145,8 +134,17 @@ align-items: center;
 justify-content: center;
 background-attachment: fixed;
 color: white;
+
 }
 .c a{
 	color: white;
-    
+    text-decoration: none;
+    background-color: $primary_color;
+    padding: 5px 10px;
+    border-radius: 7px;
+    margin:20px auto;
+
+}
+.c h1{
+    color:$primary_color;
 }
