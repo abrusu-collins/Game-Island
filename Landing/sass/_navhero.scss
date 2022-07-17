@@ -96,7 +96,7 @@ img{
 
 
  nav.scrolled {
-  background: #11a683;
+  background: $primary_color;
   box-shadow: 0 1px 5px rgba(104,104,104,0.8);
 }
 
@@ -143,7 +143,10 @@ color: white;
     padding: 5px 10px;
     border-radius: 7px;
     margin:20px auto;
-
+&:hover{
+    color:#000;
+    background-color: #fcfeff;
+}
 }
 .c h1{
     color:$primary_color;

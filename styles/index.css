@@ -112,7 +112,7 @@ img {
 }
 
 nav.scrolled {
-  background: #11a683;
+  background: #8fbf4d;
   box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
 
@@ -156,7 +156,15 @@ nav.scrolled {
   border-radius: 7px;
   margin: 20px auto;
 }
+.c a:hover {
+  color: #000;
+  background-color: #fcfeff;
+}
 
 .c h1 {
   color: #8fbf4d;
+}
+
+.games {
+  height: 100vh;
 }
