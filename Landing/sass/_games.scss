@@ -18,7 +18,7 @@
         padding:8px 40px;
         border-radius: 5px;
         text-decoration: none;
-       & :hover{
+       &:hover{
         background-color:$deep_green;
 
        }
@@ -34,7 +34,7 @@
 }
 }
 
-.play:hover{
+#play:hover{
     background-color: $deep_green;
  
 }
