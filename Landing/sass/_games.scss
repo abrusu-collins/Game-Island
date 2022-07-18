@@ -18,7 +18,10 @@
         padding:8px 40px;
         border-radius: 5px;
         text-decoration: none;
-       
+       & :hover{
+        background-color:$deep_green;
+
+       }
     }
     
   & img{
@@ -29,4 +32,9 @@
     margin: 20px auto;
   }
 }
+}
+
+.play:hover{
+    background-color: $deep_green;
+ 
 }
