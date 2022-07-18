@@ -166,5 +166,27 @@ nav.scrolled {
 }
 
 .games {
-  margin-top: 50px;
+  width: 75%;
+  margin: 90px auto 30px auto;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+.games div {
+  border: 3px solid red;
+  padding-bottom: 20px;
+}
+.games div a {
+  color: #fcfeff;
+  background-color: #8fbf4d;
+  padding: 8px 40px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.games div img {
+  border-radius: 5px;
+}
+.games div h1 {
+  margin: 20px auto;
 }

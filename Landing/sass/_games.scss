@@ -1,3 +1,31 @@
 .games{
-   margin-top: 50px;
+    width:75%;
+    margin:90px auto 30px auto;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+
+ 
+& div{
+    border: 3px solid red;
+    padding-bottom: 20px;
+    & a{
+        color:#fcfeff;
+        background-color: $primary_color;
+        padding:8px 40px;
+        border-radius: 5px;
+        text-decoration: none;
+       
+    }
+    
+  & img{
+    border-radius: 5px;
+    // margin-top: 20px;
+  }
+  & h1{
+    margin: 20px auto;
+  }
+}
 }
