@@ -174,7 +174,8 @@ nav.scrolled {
   grid-gap: 1rem;
 }
 .games div {
-  border: 3px solid red;
+  border-radius: 5px;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.02);
   padding-bottom: 20px;
 }
 .games div a {
@@ -185,7 +186,8 @@ nav.scrolled {
   text-decoration: none;
 }
 .games div img {
-  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 .games div h1 {
   margin: 20px auto;

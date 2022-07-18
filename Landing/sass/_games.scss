@@ -9,7 +9,8 @@
 
  
 & div{
-    border: 3px solid red;
+    border-radius: 5px;
+    box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);;
     padding-bottom: 20px;
     & a{
         color:#fcfeff;
@@ -21,8 +22,8 @@
     }
     
   & img{
-    border-radius: 5px;
-    // margin-top: 20px;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
   }
   & h1{
     margin: 20px auto;
