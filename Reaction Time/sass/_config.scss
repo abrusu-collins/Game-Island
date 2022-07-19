@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 $blue:#0048BE  ;
 $green:#0C7E17;
 $red:#C60505;
@@ -8,4 +8,5 @@ $white:#fcfeff;
     padding: 0;
     box-sizing: border-box;
     color:$white;
+    font-family: 'Montserrat', sans-serif;
 }
