@@ -31,9 +31,8 @@ function initiate(e){
 
 function displayscore(e){
     e.preventDefault();
- 
     let restart =` <div class="restart">
-<h1>${Math.abs((+Date.now() - firstDate))}ms</h1>
+<h1>${Math.abs((+Date.now() - firstDate)-200)}ms</h1>
 <a href="">Restart</a>
 </div>`;
     document.body.innerHTML=restart;
