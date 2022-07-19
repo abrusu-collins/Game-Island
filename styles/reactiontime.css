@@ -36,6 +36,9 @@
   align-items: center;
   justify-content: center;
 }
+.green:hover {
+  cursor: pointer;
+}
 
 .red {
   height: 100vh;
