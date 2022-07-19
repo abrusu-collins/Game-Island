@@ -4,7 +4,7 @@ A website which contains different  memory games
 2. RPS✔
 3. Number of Stars (Idris complexing)
 4. 456 ✔
-6. Reaction time
+6. Reaction time ✔
 7. Number guessing game
 8. Verbal memory
 Ame
