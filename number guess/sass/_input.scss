@@ -16,6 +16,9 @@
         background-color: $black;
         padding: 9px 40px;
         border-radius: 5px;
+        &:hover{
+            background-color: rgba(0,0,0,0.85);
+        }
     }
     & .checkandscore{
         width:100%;
@@ -24,5 +27,9 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+    }
+    & .startguessing{
+        margin-bottom:30px;
+
     }
 }
