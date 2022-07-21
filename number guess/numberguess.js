@@ -4,6 +4,7 @@ let scorediv = document.getElementById("score");
 let guide = document.getElementById("guides");
 
 let num;
+let score=20;
 let numArray=[];
 
 //shuffle function
@@ -28,4 +29,30 @@ function shuffle(array) {
     num= numArray[0];
     console.log(numArray);
     console.log(num);
-  })
+  });
+
+
+ check.addEventListener("click",(e)=>{
+    e.preventDefault();
+    let inputvalue = input.value;
+    if(!inputvalue){
+        alert("Input must not be empty")
+    }else{
+        if(inputvalue > num){
+            score--;
+            scorediv.innerHTML=` <p>Score: ${score}</p>`;
+            guide.innerHTML=`<h1>Too High <i class="fa fa-circle-arrow-up"></i></h1>`
+
+        }
+        else if(inputvalue <num){
+            score--;
+            scorediv.innerHTML=` <p>Score: ${score}</p>`;
+            guide.innerHTML=`<h1>Too Low <i class="fa fa-circle-arrow-down"></i></h1>`
+        }
+        else{
+            guide.innerHTML=`<h1>Correct <i class="fa fa-check-circle"></i> </h1>`
+
+        }
+    }
+
+ })
