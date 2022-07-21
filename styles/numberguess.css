@@ -55,3 +55,8 @@
 .input .startguessing {
   margin-bottom: 30px;
 }
+
+.guides {
+  margin: auto;
+  text-align: center;
+}
