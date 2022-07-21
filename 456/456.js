@@ -33,8 +33,8 @@ setTimeout(()=>{
   </div>`
    play = document.getElementById("play");
    space= document.getElementById("space");
-    num= document.getElementById("num");
-    game= document.getElementById("game");
+   num= document.getElementById("num");
+   game= document.getElementById("game");
 
 //play eventListener
   play.addEventListener("click",(e)=>{
