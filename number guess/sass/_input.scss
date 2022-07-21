@@ -1,0 +1,28 @@
+.input{
+    width: 40%;
+    margin: 75px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    & input{
+        padding:10px;
+        width:100%;
+   
+    }
+    & a{
+        text-decoration: none;
+        color:$white;
+        background-color: $black;
+        padding: 9px 40px;
+        border-radius: 5px;
+    }
+    & .checkandscore{
+        width:100%;
+        margin-top:30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

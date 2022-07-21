@@ -21,3 +21,31 @@
   border-radius: 5px;
   padding: 35px;
 }
+
+.input {
+  width: 40%;
+  margin: 75px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.input input {
+  padding: 10px;
+  width: 100%;
+}
+.input a {
+  text-decoration: none;
+  color: #fcfeff;
+  background-color: #000000;
+  padding: 9px 40px;
+  border-radius: 5px;
+}
+.input .checkandscore {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
