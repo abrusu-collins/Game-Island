@@ -56,3 +56,12 @@ function shuffle(array) {
     }
 
  })
+
+
+ //TODO
+//  Modal to display
+
+//  Winning lottie.
+//  You got it after x tries
+//  Score : score
+//  Restart.
