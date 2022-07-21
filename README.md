@@ -10,5 +10,4 @@ A website which contains different  memory games
 Ame
 <p>Add more games, the games should be 10</p>
 <h2>NB: RPS and fast fingers need some debugging<h2>
-  <p>Make 456 responsive</p>
-  <p>Make Landing page responsive</p>
+ <p>Make everything responsive</p>
