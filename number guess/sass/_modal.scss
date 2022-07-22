@@ -15,8 +15,11 @@
     margin:auto;
     border-radius: 5px;
     text-align: center;
+    & p{
+        margin: 15px;
+    }
     & .score{
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
     & a{
         text-decoration: none;

@@ -4,6 +4,7 @@ let scorediv = document.getElementById("score");
 let guide = document.getElementById("guides");
 
 let num;
+let clickcount=0;
 let score=20;
 let numArray=[];
 
@@ -38,6 +39,7 @@ function shuffle(array) {
     if(!inputvalue){
         alert("Input must not be empty")
     }else{
+        clickcount++;
         if(inputvalue > num){
             score--;
             scorediv.innerHTML=` <p>Score: ${score}</p>`;
@@ -50,18 +52,18 @@ function shuffle(array) {
             guide.innerHTML=`<h1>Too Low <i class="fa fa-circle-arrow-down"></i></h1>`
         }
         else{
-            guide.innerHTML=`<h1>Correct <i class="fa fa-check-circle"></i> </h1>`
+            guide.innerHTML=`<h1>Correct <i class="fa fa-check-circle"></i> </h1>`;
+
+            document.body.innerHTML+=`<div class="modal">
+            <div class="modalinner">
+                <i class="fa fa- fa-trophy fa-3x"></i>
+               <p>You got it after ${clickcount} tries</p>
+               <p class="score">Score : <b> ${score}</b></p>
+               <a href="">Restart</a>
+            </div>
+        </div>`;
 
         }
     }
 
  })
-
-
- //TODO
-//  Modal to display
-
-//  Winning icon
-//  You got it after x tries
-//  Score : score
-//  Restart button

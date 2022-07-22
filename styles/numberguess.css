@@ -140,8 +140,11 @@
   border-radius: 5px;
   text-align: center;
 }
+.modal .modalinner p {
+  margin: 15px;
+}
 .modal .modalinner .score {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 .modal .modalinner a {
   text-decoration: none;
