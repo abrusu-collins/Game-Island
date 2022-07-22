@@ -61,7 +61,7 @@ function shuffle(array) {
  //TODO
 //  Modal to display
 
-//  Winning lottie.
+//  Winning icon
 //  You got it after x tries
 //  Score : score
-//  Restart.
+//  Restart button
