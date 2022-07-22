@@ -25,3 +25,8 @@
   align-items: center;
   justify-content: space-around;
 }
+
+.word {
+  margin: 50px auto;
+  text-align: center;
+}
