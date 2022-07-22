@@ -44,8 +44,7 @@ function shuffle(array) {
             score--;
             scorediv.innerHTML=` <p>Score: ${score}</p>`;
             guide.innerHTML=`<h1>Too High <i class="fa fa-circle-arrow-up"></i></h1>`;
-            guide.classList.remove("animationclass");
-            guide.classList.add("animationclass");
+           
 
         }
         else if(inputvalue <num){
@@ -53,8 +52,7 @@ function shuffle(array) {
             scorediv.innerHTML=` <p>Score: ${score}</p>`;
             guide.innerHTML=`<h1>Too Low <i class="fa fa-circle-arrow-down"></i></h1>`;
             guide.style.animation="";
-            guide.classList.remove("animationclass");
-            guide.classList.add("animationclass");
+       
 
 
         }
@@ -69,7 +67,7 @@ function shuffle(array) {
                <a href="">Restart</a>
             </div>
         </div>`;
-        guide.classList.remove("animationclass");
+  
 
 
         }

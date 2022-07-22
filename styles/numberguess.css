@@ -1,62 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@-webkit-keyframes sed {
-  0% {
-    transform: rotate(0) scale(1);
-  }
-  60% {
-    transform: rotate(0) scale(1);
-  }
-  75% {
-    transform: rotate(0) scale(1.12);
-  }
-  80% {
-    transform: rotate(0) scale(1.1);
-  }
-  84% {
-    transform: rotate(-10deg) scale(1.1);
-  }
-  88% {
-    transform: rotate(10deg) scale(1.1);
-  }
-  92% {
-    transform: rotate(-10deg) scale(1.1);
-  }
-  96% {
-    transform: rotate(10deg) scale(1.1);
-  }
-  100% {
-    transform: rotate(0) scale(1);
-  }
-}
-@keyframes sed {
-  0% {
-    transform: rotate(0) scale(1);
-  }
-  60% {
-    transform: rotate(0) scale(1);
-  }
-  75% {
-    transform: rotate(0) scale(1.12);
-  }
-  80% {
-    transform: rotate(0) scale(1.1);
-  }
-  84% {
-    transform: rotate(-10deg) scale(1.1);
-  }
-  88% {
-    transform: rotate(10deg) scale(1.1);
-  }
-  92% {
-    transform: rotate(-10deg) scale(1.1);
-  }
-  96% {
-    transform: rotate(10deg) scale(1.1);
-  }
-  100% {
-    transform: rotate(0) scale(1);
-  }
-}
 * {
   margin: 0;
   padding: 0;
@@ -118,16 +60,6 @@
   width: 30%;
   margin: auto;
   text-align: center;
-}
-
-.animationclass {
-  -webkit-animation: sed forwards 3s ease-in-out;
-          animation: sed forwards 3s ease-in-out;
-}
-
-.animationclass1 {
-  -webkit-animation: sed forwards 3s ease-in-out;
-          animation: sed forwards 3s ease-in-out;
 }
 
 .modal {
