@@ -118,8 +118,16 @@
   width: 30%;
   margin: auto;
   text-align: center;
-  -webkit-animation: sed infinite 3s ease-in-out;
-          animation: sed infinite 3s ease-in-out;
+}
+
+.animationclass {
+  -webkit-animation: sed forwards 3s ease-in-out;
+          animation: sed forwards 3s ease-in-out;
+}
+
+.animationclass1 {
+  -webkit-animation: sed forwards 3s ease-in-out;
+          animation: sed forwards 3s ease-in-out;
 }
 
 .modal {
