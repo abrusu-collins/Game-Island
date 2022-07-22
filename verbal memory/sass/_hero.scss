@@ -1,0 +1,8 @@
+.hero{
+    height:100vh;
+    color:$white;
+    & .header{
+        margin:30px;
+        text-align: center;
+    }
+}
