@@ -45,3 +45,23 @@
   color: black;
   border-radius: 5px;
 }
+
+.rules {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding: 50px;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.02);
+  margin-bottom: 50px;
+  border-radius: 5px;
+}
+.rules p {
+  margin: 20px auto;
+}
+.rules a {
+  text-decoration: none;
+  background-color: #ffd154;
+  padding: 10px 40px;
+  color: black;
+  border-radius: 5px;
+}
