@@ -1,1 +1,14 @@
-.controls{}
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:20%;
+    margin:auto;
+    & a{
+        text-decoration: none;
+        background-color: $yellow;
+        padding:10px 40px;
+        color:black;
+        border-radius: 5px;
+    }
+}

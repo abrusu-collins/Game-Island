@@ -20,7 +20,7 @@
 .scoreandlives {
   font-size: 30px;
   margin: auto;
-  width: 50%;
+  width: 20%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -29,4 +29,19 @@
 .word {
   margin: 50px auto;
   text-align: center;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20%;
+  margin: auto;
+}
+.controls a {
+  text-decoration: none;
+  background-color: #ffd154;
+  padding: 10px 40px;
+  color: black;
+  border-radius: 5px;
 }
