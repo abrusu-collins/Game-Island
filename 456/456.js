@@ -102,7 +102,7 @@ play.addEventListener("click",(e)=>{
         console.log(score);
         time=0;
         clearInterval(interval);
-        r=setInterval(()=>{time++ ;console.log(time)},1000);
+        interval=setInterval(()=>{time++ ;console.log(time)},1000);
       }
       else{
         clearInterval(interval);
