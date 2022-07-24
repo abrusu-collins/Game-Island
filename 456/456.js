@@ -4,7 +4,6 @@ let play = document.getElementById("play");
 let space= document.getElementById("space");
 let num= document.getElementById("num");
 let game= document.getElementById("game");
-let start = document.getElementById("start");
 let placeholder = document.getElementById("placeholder");
 let numtodisplay;
 let numcount;
@@ -16,29 +15,27 @@ let score = 0;
 let time=0;
 
 
-
-//bug area
-setInterval(()=>{
-  if(time===4){
-    restart.addEventListener("click",(e)=>{
-      e.preventDefault();
-      document.getElementById("modal").style.display="none";
-start.click();
-time=0;
-score=0;
-    })
+// function numchange
+function numchange(){
+  shuffle(numArray)
+   numtodisplay= parseInt(numArray[1]);
+   numcount=parseInt(numArray[0]);
+   elementtodisplay='';
+  
+  
+  console.log(`numtodisplay: ${numtodisplay}`);
+  console.log(`numcount: ${numcount}`);
+  
+  for(let i=0; i<numcount;i++){
+    elementtodisplay+= numtodisplay;
   }
-},1001);
-
-//end of bug area
-
-
-
-
-////////////////////////////////////////////////////////////
-
-
-//shuffle function
+  
+  space.innerHTML= `<h1 id="num">${elementtodisplay.trim()}</h1> `;
+  console.log(elementtodisplay.trim());
+  
+  }
+  
+  //shuffle function
 function shuffle(array) {
   for (i = 0; i <= array.length - 1; i++) {
     let randonNumber = Math.floor(Math.random() * (i+1));
@@ -47,27 +44,7 @@ function shuffle(array) {
     array[i] = valueAtRandomIndex;
   }
   return array;
-}
-
-// function numchange
-function numchange(){
-shuffle(numArray)
- numtodisplay= parseInt(numArray[1]);
- numcount=parseInt(numArray[0]);
- elementtodisplay='';
-
-
-console.log(`numtodisplay: ${numtodisplay}`);
-console.log(`numcount: ${numcount}`);
-
-for(let i=0; i<numcount;i++){
-  elementtodisplay+= numtodisplay;
-}
-
-space.innerHTML= `<h1 id="num">${elementtodisplay.trim()}</h1> `;
-console.log(elementtodisplay.trim());
-
-}
+};
 
 
 //play eventListener
@@ -122,3 +99,25 @@ play.addEventListener("click",(e)=>{
   },3000);
   
   });
+
+
+
+
+
+
+////////////////////////////////////////////////////////////
+
+//bug area
+setInterval(()=>{
+  if(time===4){
+    restart.addEventListener("click",(e)=>{
+      e.preventDefault();
+      document.getElementById("modal").style.display="none";
+start.click();
+time=0;
+score=0;
+    })
+  }
+},1001);
+
+//end of bug area
