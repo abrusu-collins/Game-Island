@@ -62,12 +62,14 @@ function checknew(e){
   }
   else{
 lives--;
+lifereducer();
+displaywords();
   }
   
 
 }
 
-function livfereducer(){
+function lifereducer(){
   if(lives===3){
     life.innerHTML=`<p id="full">Life <i class="fa fa-battery-full"></i> </p>`
   }
