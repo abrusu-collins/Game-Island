@@ -9,6 +9,8 @@ let seenwordArray = [];
 let score=0;
 let lives=3;
 
+lifereducer();
+
 
 start.addEventListener("click", fetchwords, true);
 seenbutton.addEventListener("click",checkseen,true);
