@@ -54,7 +54,7 @@ function displaywords() {
 function checkseen(e){
   e.preventDefault();
 
-  if(word.textContent="Word appears here"){
+  if(word.innerText=="Word appears here" ||word.textContent=="Click Start" ){
     word.innerHTML=`<h2>Click Start <i class="fa fa-circle-arrow-up"></i></h2>`
   }else{
   if(seenwordArray.includes(word.textContent)){
