@@ -15,6 +15,9 @@
   text-align: center;
   font-size: 50px;
 }
+.hero h2 {
+  margin-bottom: 30px;
+}
 
 .scoreandlives {
   font-size: 30px;
