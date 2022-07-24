@@ -64,3 +64,38 @@
   color: black;
   border-radius: 5px;
 }
+
+.modal {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal .modalinner {
+  padding: 40px;
+  background-color: #fcfeff;
+  width: 40%;
+  margin: auto;
+  border-radius: 5px;
+  text-align: center;
+}
+.modal .modalinner p {
+  margin: 15px;
+}
+.modal .modalinner .score {
+  margin-bottom: 20px;
+}
+.modal .modalinner a {
+  text-decoration: none;
+  color: #fcfeff;
+  background-color: #11A683;
+  padding: 9px 40px;
+  border-radius: 5px;
+}
+.modal .modalinner a:hover {
+  background-color: rgba(0, 0, 0, 0.85);
+}
