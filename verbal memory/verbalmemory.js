@@ -36,7 +36,7 @@ function fetchwords(e) {
   lifereducer();
   scorediv.innerHTML = `<p>Score : ${score}</p>`;
 
-  word.innerHTML = `<h1> <i class="fa fa-spinner fa-spin"></i> </h1>`;
+  word.innerHTML = `<h1> <i class="fa fa-spinner fa-pulse"></i> </h1>`;
   fetch("https://random-word-api.herokuapp.com/word?number=100")
     .then((response) => {
       return response.json();
