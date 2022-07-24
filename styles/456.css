@@ -24,11 +24,11 @@
   font-family: sf-ui-regular;
   background-color: #4831d4;
   color: #fcfeff;
-  height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-bottom: 20px;
 }
 .hero h1 {
   font-family: sf-ui-heavy;
@@ -55,6 +55,8 @@
   width: 50%;
   padding: 30px;
   text-align: center;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.02);
+  margin: 20px auto;
 }
 
 .load {

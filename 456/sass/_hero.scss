@@ -3,11 +3,11 @@
 font-family: sf-ui-regular;
 background-color: $background;
 color:$color;
-height: 50vh;
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
+padding-bottom: 20px;
 & h1{
     font-family: sf-ui-heavy;
     font-size: 90px;
