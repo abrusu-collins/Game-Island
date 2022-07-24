@@ -9,6 +9,11 @@ let seenwordArray = [];
 let score=0;
 let lives=3;
 
+
+start.addEventListener("click", fetchwords, true);
+seenbutton.addEventListener("click",checkseen,true);
+newbutton.addEventListener("click",checknew,true);
+
 //shuffle function
 function shuffle(array) {
   for (i = 0; i <= array.length - 1; i++) {
@@ -20,9 +25,6 @@ function shuffle(array) {
   return array;
 }
 
-start.addEventListener("click", fetchwords, true);
-seenbutton.addEventListener("click",checkseen,true);
-newbutton.addEventListener("click",checknew,true);
 
 function fetchwords(e) {
   e.preventDefault();
