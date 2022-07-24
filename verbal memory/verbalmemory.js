@@ -49,6 +49,19 @@ function displaywords() {
 
 function checkseen(e){
   e.preventDefault();
+  if(seenwordArray.includes(word.textContent)){
+    score++;
+    scorediv.innerHTML=`<p>Score : ${score}</p>`;
+  displaywords();
+  }
+  else{
+lives--;
+lifereducer();
+seenwordArray.push(word.textContent);
+console.log(seenwordArray);
+displaywords();
+  }
+
 }
 
 function checknew(e){
