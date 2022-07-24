@@ -54,7 +54,7 @@ function displaywords() {
 function checkseen(e){
   e.preventDefault();
 
-  if(word.innerText=="Word appears here" ||word.textContent=="Click Start" ){
+  if(word.innerText=="Word appears here" || word.textContent=="Click Start " ){
     word.innerHTML=`<h2>Click Start <i class="fa fa-circle-arrow-up"></i></h2>`
   }else{
   if(seenwordArray.includes(word.textContent)){
@@ -75,6 +75,9 @@ displaywords();
 
 function checknew(e){
   e.preventDefault();
+  if(word.innerText=="Word appears here" || word.textContent=="Click Start " ){
+    word.innerHTML=`<h2>Click Start <i class="fa fa-circle-arrow-up"></i></h2>`
+  }else{
   if(!(seenwordArray.includes(word.textContent))){
     score++;
     scorediv.innerHTML=`<p>Score : ${score}</p>`
@@ -87,7 +90,7 @@ lives--;
 lifereducer();
 displaywords();
   }
-  
+}
 
 }
 
