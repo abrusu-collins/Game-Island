@@ -6,8 +6,8 @@ A website which contains different  memory games
 4. 456 ✔
 6. Reaction time ✔
 7. Number guessing game✔
-8. Verbal memory
-Ame
+8. Verbal memory ✔
+<p>Ame</p>
 <h2> Add loaders to every page </h2>
 <h2> Change 456 to have same format as the others </h2>
 <h2>NB: RPS and fast fingers need some debugging<h2>
