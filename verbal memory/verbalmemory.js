@@ -1,11 +1,13 @@
 let start = document.getElementById("start");
 let life = document.getElementById("life");
-let score = document.getElementById("score");
+let scorediv = document.getElementById("score");
 let word = document.getElementById("word");
 let seenbutton = document.getElementById("seen");
 let newbutton = document.getElementById("new");
 let wordArray = [];
 let seenwordArray = [];
+let score=0;
+let lives=3;
 
 //shuffle function
 function shuffle(array) {
@@ -36,6 +38,7 @@ function fetchwords(e) {
     })
     .catch((error) => {
       alert(error);
+      word.innerHTML=`<h1>Word appears here</h1>`;
     });
 }
 
@@ -51,10 +54,21 @@ function checkseen(e){
 function checknew(e){
   e.preventDefault();
   if(!(seenwordArray.includes(word.textContent))){
+    score++;
+    scorediv.innerHTML=`<p>Score : ${score}</p>`
     seenwordArray.push(word.textContent);
   console.log(seenwordArray);
   displaywords();
   }
+  else{
+lives--;
+  }
   
+
+}
+
+function livfereducer(){
+  if(lives===3){}
+  else if(lives===2){}
 
 }
