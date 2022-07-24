@@ -50,8 +50,11 @@
 .hero a:hover {
   background-color: rgba(204, 243, 129, 0.8);
 }
-.hero ul {
-  margin: 20px auto;
+
+.rules {
+  width: 50%;
+  padding: 30px;
+  text-align: center;
 }
 
 .load {
