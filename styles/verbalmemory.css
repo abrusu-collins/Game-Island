@@ -77,7 +77,8 @@
 }
 .modal .modalinner {
   padding: 40px;
-  background-color: #fcfeff;
+  background-color: #11A683;
+  color: #fcfeff;
   width: 40%;
   margin: auto;
   border-radius: 5px;
@@ -91,11 +92,8 @@
 }
 .modal .modalinner a {
   text-decoration: none;
-  color: #fcfeff;
-  background-color: #11A683;
+  color: #000000;
+  background-color: #ffd154;
   padding: 9px 40px;
   border-radius: 5px;
-}
-.modal .modalinner a:hover {
-  background-color: rgba(0, 0, 0, 0.85);
 }

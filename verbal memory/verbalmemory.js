@@ -102,8 +102,8 @@ function lifereducer(){
     life.innerHTML=`<p id="empty">Life <i class="fa fa-battery-empty"></i> </p>`;
     document.body.innerHTML+=`<div class="modal">
     <div class="modalinner">
-        <i class="fa fa- fa-trophy fa-3x"></i>
-       <p class="score">Score : <b> ${score}</b></p>
+    <h1>GAME OVER</h1>
+    <p class="score">Score : <b> ${score}</b></p>
        <a href="">Restart</a>
     </div>
 </div>`;
