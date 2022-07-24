@@ -9,7 +9,6 @@ A website which contains different  memory games
 8. Verbal memory ✔
 <p>Ame</p>
 <h2> Add loaders to every page </h2>
-<h2> Change 456 to have same format as the others </h2>
 <h2>NB: RPS and fast fingers need some debugging<h2>
  <p>Make everything responsive</p>
  <p>Add more games, the games should be 10</p>
