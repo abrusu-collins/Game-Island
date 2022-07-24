@@ -68,7 +68,20 @@ lives--;
 }
 
 function livfereducer(){
-  if(lives===3){}
-  else if(lives===2){}
+  if(lives===3){
+    life.innerHTML=`<p id="full">Life <i class="fa fa-battery-full"></i> </p>`
+  }
+  else if(lives===2){
+    life.innerHTML=`<p id="half">Life <i class="fa fa-battery-half"></i>`
+
+  }
+  else if(lives===1){
+    life.innerHTML=`<p id="quarter">Life <i class="fa fa-battery-quarter"></i> </p>`
+
+  }
+  else{
+    life.innerHTML=`<p id="empty">Life <i class="fa fa-battery-empty"></i> </p>`
+
+  }
 
 }
