@@ -100,24 +100,3 @@ play.addEventListener("click",(e)=>{
   
   });
 
-
-
-
-
-
-////////////////////////////////////////////////////////////
-
-//bug area
-setInterval(()=>{
-  if(time===4){
-    restart.addEventListener("click",(e)=>{
-      e.preventDefault();
-      document.getElementById("modal").style.display="none";
-start.click();
-time=0;
-score=0;
-    })
-  }
-},1001);
-
-//end of bug area
