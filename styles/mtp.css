@@ -5,3 +5,32 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
+
+.header {
+  text-align: center;
+  margin: 30px auto;
+  font-size: 45px;
+}
+
+.rules {
+  margin: auto;
+  margin-top: 40px;
+  width: 40%;
+  text-align: center;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.02);
+  border-radius: 5px;
+  padding: 30px;
+}
+.rules p {
+  margin: 20px auto;
+}
+.rules a {
+  text-decoration: none;
+  color: #fcfeff;
+  background-color: #000000;
+  padding: 9px 40px;
+  border-radius: 5px;
+}
+.rules a:hover {
+  background-color: rgba(0, 0, 0, 0.85);
+}
