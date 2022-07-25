@@ -16,13 +16,6 @@ document.querySelector('.toggler').onclick = () => {
 }
 
 
-//Loader 
-
-
-// function loadfunction(){
-//   loader.style.display="none";
-// }
-
 $(document).ready(function() {
   //Preloader
   preloaderFadeOutTime = 1000;
