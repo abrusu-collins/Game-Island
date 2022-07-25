@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Nunito", sans-serif;
+}
+
+.loader {
+  font-size: 30px;
+  color: #8fbf4d;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+html {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+img {
+  width: 100%;
+}
+
+/* navbar */
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.nav {
+  width: 100%;
+  height: 55px;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
+  position: fixed;
+}
+
+.nav-brand, .nav-link, .nav-collapse {
+  display: inline-block;
+}
+
+.nav-brand, .nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  line-height: 55px;
+  padding: 0 1rem;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.nav-brand {
+  font-size: 1.25rem;
+}
+
+.nav-link {
+  font-size: 1rem;
+}
+
+.nav-collapse {
+  float: right;
+}
+
+.toggler {
+  float: right;
+  width: 40px;
+  height: 18px;
+  margin: 18.5px 0;
+  background: none;
+  border: none;
+  outline: none;
+  display: none;
+  opacity: 0.8;
+}
+
+.toggler span {
+  display: block;
+  width: 90%;
+  height: 2px;
+  background: #ffffff;
+  position: relative;
+  transition: 0.25s ease-in-out;
+}
+
+.toggler span:nth-child(1) {
+  top: -7.5px;
+}
+
+.toggler span:nth-child(2) {
+  top: 0;
+}
+
+.toggler span:nth-child(3) {
+  top: 7.5px;
+}
+
+.nav-brand:hover, .nav-link:hover, .toggler:hover,
+.nav-brand:focus, .nav-link:focus, .toggler:focus {
+  opacity: 1;
+}
+
+.nav.open .toggler span:nth-child(1) {
+  transform: translateY(8.5px) rotate(45deg);
+}
+
+.nav.open .toggler span:nth-child(2) {
+  transform: translateX(-100%);
+  width: 0;
+  opacity: 0;
+}
+
+.nav.open .toggler span:nth-child(3) {
+  transform: translateY(-8.5px) rotate(-45deg);
+}
+
+.nav.open {
+  height: 54vh;
+}
+
+nav.scrolled {
+  background: #8fbf4d;
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+@media (max-width: 767px) {
+  .nav-collapse, .nav-link {
+    float: none;
+    display: block;
+  }
+  .nav-link {
+    text-align: center;
+  }
+  .toggler {
+    display: block;
+  }
+}
+/*end of navbar*/
+.c img {
+  width: 40%;
+}
+
+.c {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./img/greenpad.jpg");
+  height: 100vh;
+  font-size: 30px;
+  background-position: top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+  color: white;
+}
+
+.c a {
+  color: white;
+  text-decoration: none;
+  background-color: #8fbf4d;
+  padding: 5px 10px;
+  border-radius: 7px;
+  margin: 20px auto;
+}
+.c a:hover {
+  background-color: #567F3A;
+}
+
+.c h1 {
+  color: #8fbf4d;
+}
+
+.games {
+  margin: 90px auto 30px auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.games .gamesinner {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+.games .gamesinner div {
+  border-radius: 5px;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.02);
+  padding-bottom: 30px;
+}
+.games .gamesinner div a {
+  color: #fcfeff;
+  background-color: #8fbf4d;
+  padding: 8px 40px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.games .gamesinner div a:hover {
+  background-color: #567F3A;
+}
+.games .gamesinner div img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.games .gamesinner div h1 {
+  margin: 20px auto;
+}
+
+footer {
+  color: #000;
+  margin-top: 100px;
+  padding: 20px;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.02);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer a {
+  color: inherit;
+  text-decoration: none;
+}
+footer .socials a {
+  color: #8fbf4d;
+  margin-right: 10px;
+}
+footer .socials a:hover {
+  color: #567F3A;
+}
+
+#feedback {
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: #fcfeff;
+  background-color: #8fbf4d;
+}
+#feedback:hover {
+  background-color: #567F3A;
+}
