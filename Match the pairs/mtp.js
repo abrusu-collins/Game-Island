@@ -194,6 +194,7 @@ let emojiArray = [
   "💫",
 ];
 let pairArray=[];
+let clickControlArray=[];
 let start = document.getElementById("start");
 
 let square1 = document.getElementById("square1");
@@ -257,15 +258,49 @@ function emojiFetch(e) {
 square1.addEventListener("click",(e)=>{
     e.preventDefault();
     if(pairArray.length==0){
-    square1.firstElementChild.classList.toggle("reveal");
+    square1.firstElementChild.classList.add("reveal");
     pairArray.push(square1.firstElementChild.textContent);
     console.log( pairArray);
     }
     else{
-        square1.firstElementChild.classList.toggle("reveal");
-        if(Array.from(new Set(pairArray)).length==1){
+        square1.firstElementChild.classList.add("reveal");
+        pairArray.push(square1.firstElementChild.textContent)
+        if(pairArray[0]===pairArray[1]){
             square1.firstElementChild.className= "reveal";
             console.log("pair");
+        }
+        else{
+            pairArray=[];
+            square1.firstElementChild.classList.remove("reveal");
+
+
+        }
+       
+
+    }
+},true);
+
+
+square2.addEventListener("click",(e)=>{
+    e.preventDefault();
+    if(pairArray.length==0){
+    square2.firstElementChild.classList.add("reveal");
+    pairArray.push(square2.firstElementChild.textContent);
+    console.log( pairArray);
+    }
+    else{
+        square2.firstElementChild.classList.add("reveal");
+        pairArray.push(square2.firstElementChild.textContent);
+        if(pairArray[0]===pairArray[1]){
+            square2.firstElementChild.className= "reveal";
+            console.log("pair");
+            console.log(pairArray);
+        }
+        else{
+            pairArray=[];
+            square2.firstElementChild.classList.remove("reveal");
+
+
         }
        
 
