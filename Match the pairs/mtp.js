@@ -263,6 +263,10 @@ square1.addEventListener("click",(e)=>{
     }
     else{
         square1.firstElementChild.classList.toggle("reveal");
+        if(Array.from(new Set(pairArray)).length==1){
+            square1.firstElementChild.className= "reveal";
+            console.log("pair");
+        }
        
 
     }
