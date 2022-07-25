@@ -1,4 +1,5 @@
-var navbar = document.querySelector('.nav')
+var navbar = document.querySelector('.nav');
+var loader =document.querySelector(".loader");
 
 window.onscroll = function() {
 
@@ -12,4 +13,12 @@ window.onscroll = function() {
 
 document.querySelector('.toggler').onclick = () => {
   document.querySelector('.nav').classList.toggle('open');
+}
+
+
+//Loader 
+
+
+function loadfunction(){
+  loader.style.display="none";
 }
