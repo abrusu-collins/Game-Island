@@ -193,6 +193,7 @@ let emojiArray = [
   "💥",
   "💫",
 ];
+let pairArray=[];
 let start = document.getElementById("start");
 
 let square1 = document.getElementById("square1");
@@ -255,5 +256,14 @@ function emojiFetch(e) {
 //squares click eventListeners
 square1.addEventListener("click",(e)=>{
     e.preventDefault();
+    if(pairArray.length==0){
     square1.firstElementChild.classList.toggle("reveal");
+    pairArray.push(square1.firstElementChild.textContent);
+    console.log( pairArray);
+    }
+    else{
+        square1.firstElementChild.classList.toggle("reveal");
+       
+
+    }
 },true);
