@@ -37,5 +37,26 @@ function emojiFetch(e){
     shuffle(emojiArray);
     let newArray= emojiArray.splice(0,8);
     let finalArray=newArray.concat(newArray);
+    shuffle(finalArray)
     console.log(finalArray);
+
+    
+square1.innerHTML=`<p>${finalArray[0]}</p>`;
+square2.innerHTML=`<p>${finalArray[1]}</p>`;
+square3.innerHTML=`<p>${finalArray[2]}</p>`;
+square4.innerHTML=`<p>${finalArray[3]}</p>`;
+square5.innerHTML=`<p>${finalArray[4]}</p>`;
+square6.innerHTML=`<p>${finalArray[5]}</p>`;
+square7.innerHTML=`<p>${finalArray[6]}</p>`;
+square8.innerHTML=`<p>${finalArray[7]}</p>`;
+square9.innerHTML=`<p>${finalArray[8]}</p>`;
+square10.innerHTML=`<p>${finalArray[9]}</p>`;
+square11.innerHTML=`<p>${finalArray[10]}</p>`;
+square12.innerHTML=`<p>${finalArray[11]}</p>`;
+square13.innerHTML=`<p>${finalArray[12]}</p>`;
+square14.innerHTML=`<p>${finalArray[13]}</p>`;
+square15.innerHTML=`<p>${finalArray[14]}</p>`;
+square16.innerHTML=`<p>${finalArray[15]}</p>`;
+
+
 }
