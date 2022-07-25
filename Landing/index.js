@@ -25,7 +25,7 @@ document.querySelector('.toggler').onclick = () => {
 
 $(document).ready(function() {
   //Preloader
-  preloaderFadeOutTime = 500;
+  preloaderFadeOutTime = 1000;
   function hidePreloader() {
   var preloader = $('.loader');
   preloader.fadeOut(preloaderFadeOutTime);
