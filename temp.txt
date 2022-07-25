@@ -1,4 +1,4 @@
-<div class="load">
+<div class="loader">
 <h3> Wait for game to load...</h3>
  <img src="./img/load.svg" alt="load-animation">
 </div>

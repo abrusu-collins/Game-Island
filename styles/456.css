@@ -48,18 +48,6 @@
   margin: 20px auto;
 }
 
-.load {
-  height: 50vh;
-  color: #4831d4;
-  font-family: sf-ui-regular;
-  font-size: 50px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 .play {
   font-family: sf-ui-regular;
   height: 50vh;
