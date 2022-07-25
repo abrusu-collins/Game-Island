@@ -34,3 +34,21 @@
 .rules a:hover {
   background-color: rgba(0, 0, 0, 0.85);
 }
+
+.squareparent {
+  width: 50%;
+  margin: 20px auto;
+  font-size: 50px;
+  border: 2px solid #000000;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1px;
+  border-radius: 5px;
+}
+.squareparent .square {
+  background-color: #eef0f0;
+  text-align: center;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+}
