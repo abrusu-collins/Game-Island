@@ -229,9 +229,10 @@ function shuffle(array) {
 function emojiFetch(e) {
   e.preventDefault();
   shuffle(emojiArray);
-  let newArray = emojiArray.splice(0, 8);
+  let newArray = [...emojiArray].splice(0,8);
   let finalArray = newArray.concat(newArray);
   shuffle(finalArray);
+  console.log(emojiArray);
   console.log(finalArray);
   square1.innerHTML = `<p>${finalArray[0]}</p>`;
   square2.innerHTML = `<p>${finalArray[1]}</p>`;
