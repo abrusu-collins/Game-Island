@@ -11,11 +11,13 @@
 
     & .square{
    background-color: #eef0f0;
-//    margin: 10px 10px;
    text-align: center;
    width:100%;
    border-radius: 5px;
    padding:10px;
+   & p{
+    visibility: hidden;
+   }
    &:hover{
     cursor: pointer;
    }

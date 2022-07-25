@@ -8,7 +8,7 @@
 
 .header {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 10px;
   font-size: 45px;
 }
 
@@ -21,7 +21,7 @@
   border-radius: 5px;
   padding: 30px;
 }
-.rules p {
+.rules div {
   margin: 20px auto;
 }
 .rules a {
@@ -51,6 +51,9 @@
   width: 100%;
   border-radius: 5px;
   padding: 10px;
+}
+.squareparent .square p {
+  visibility: hidden;
 }
 .squareparent .square:hover {
   cursor: pointer;
