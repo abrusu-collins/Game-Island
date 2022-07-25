@@ -10,3 +10,5 @@ A website which contains different  memory games
 <h2>NB: fast fingers need some debugging<h2>
  <p>Make everything responsive</p>
  <p>Add more games later, the games should be 10</p>
+
+ It's messing up on heroku🤦‍♂️
