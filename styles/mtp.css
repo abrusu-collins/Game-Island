@@ -52,6 +52,13 @@
   border-radius: 5px;
   padding: 10px;
 }
+.squareparent .square p {
+  visibility: hidden;
+}
 .squareparent .square:hover {
   cursor: pointer;
+}
+
+.reveal {
+  visibility: visible;
 }

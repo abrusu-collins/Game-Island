@@ -251,3 +251,9 @@ function emojiFetch(e) {
   square15.innerHTML = `<p>${finalArray[14]}</p>`;
   square16.innerHTML = `<p>${finalArray[15]}</p>`;
 }
+
+//squares click eventListeners
+square1.addEventListener("click",(e)=>{
+    e.preventDefault();
+    square1.firstElementChild.classList.toggle("reveal");
+},true);

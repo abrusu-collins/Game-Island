@@ -15,11 +15,16 @@
    width:100%;
    border-radius: 5px;
    padding:10px;
-//    & p{
-//     visibility: hidden;
-//    }
+   & p{
+    visibility: hidden;
+    
+   }
    &:hover{
     cursor: pointer;
    }
     }
 }
+
+.reveal{
+    visibility: visible;
+   }
