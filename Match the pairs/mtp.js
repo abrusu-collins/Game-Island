@@ -191,7 +191,7 @@ let emojiArray = [
   "💦",
   "💤",
   "💥",
-  "💫",
+  "💫"
 ];
 let pairArray=[];
 let clickControlArray=[];
@@ -266,7 +266,8 @@ square1.addEventListener("click",(e)=>{
         square1.firstElementChild.classList.add("reveal");
         pairArray.push(square1.firstElementChild.textContent);
         if(pairArray[0]===pairArray[1]){
-          `<p>${pairArray[0]}</p>`.parentElement.innerHTML=`<p>Amanaa</p>`;
+          let pair1=`<p>${pairArray[0]}</p>`;
+          pair1.parentNode.innerHTML =`<p>Amanaa</p>`;
             console.log("pair");
         }
         else{
