@@ -264,9 +264,9 @@ square1.addEventListener("click",(e)=>{
     }
     else{
         square1.firstElementChild.classList.add("reveal");
-        pairArray.push(square1.firstElementChild.textContent)
+        pairArray.push(square1.firstElementChild.textContent);
         if(pairArray[0]===pairArray[1]){
-            square1.firstElementChild.className= "reveal";
+          `<p>${pairArray[0]}</p>`.parentElement.innerHTML=`<p>Amanaa</p>`;
             console.log("pair");
         }
         else{
