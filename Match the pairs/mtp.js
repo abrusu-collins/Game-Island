@@ -259,15 +259,16 @@ square1.addEventListener("click",(e)=>{
     e.preventDefault();
     if(pairArray.length==0){
     square1.firstElementChild.classList.add("reveal");
-    pairArray.push(square1.firstElementChild.textContent);
+    square2.removeEventListener("click",ad,true);
+    pairArray.push(square1);
     console.log( pairArray);
     }
     else{
         square1.firstElementChild.classList.add("reveal");
-        pairArray.push(square1.firstElementChild.textContent);
-        if(pairArray[0]===pairArray[1]){
-          let pair1=`<p>${pairArray[0]}</p>`;
-          pair1.parentNode.innerHTML =`<p>Amanaa</p>`;
+        pairArray.push(square1);
+        if(pairArray[0].firstElementChild.textContent===pairArray[1].firstElementChild.textContent){
+          
+          square1.firstElementChild.className = "reveal";
             console.log("pair");
         }
         else{
@@ -283,27 +284,36 @@ square1.addEventListener("click",(e)=>{
 
 
 square2.addEventListener("click",(e)=>{
-    e.preventDefault();
-    if(pairArray.length==0){
-    square2.firstElementChild.classList.add("reveal");
-    pairArray.push(square2.firstElementChild.textContent);
-    console.log( pairArray);
-    }
-    else{
-        square2.firstElementChild.classList.add("reveal");
-        pairArray.push(square2.firstElementChild.textContent);
-        if(pairArray[0]===pairArray[1]){
-            square2.firstElementChild.className= "reveal";
-            console.log("pair");
-            console.log(pairArray);
-        }
-        else{
-            pairArray=[];
-            square2.firstElementChild.classList.remove("reveal");
+  e.preventDefault();
+  if(pairArray.length==0){
+  square2.firstElementChild.classList.add("reveal");
+  pairArray.push(square2);
+  console.log( pairArray);
+  }
+  else{
+      square2.firstElementChild.classList.add("reveal");
+      pairArray.push(square2);
+      if(pairArray[0].firstElementChild.textContent===pairArray[1].firstElementChild.textContent){
+        
+        square2.firstElementChild.className = "reveal";
+        square2.removeEventListener("click",ad,true);
+          console.log("pair");
+      }
+      else{
+          pairArray=[];
+          square2.firstElementChild.classList.remove("reveal");
 
 
-        }
-       
+      }
+     
 
-    }
+  }
 },true);
+
+
+
+
+
+function ad(){
+  
+}
