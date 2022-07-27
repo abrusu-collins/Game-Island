@@ -9,7 +9,6 @@
 .loader {
   font-size: 30px;
   color: #8fbf4d;
-  background-color: #fcfeff;
   position: fixed;
   top: 0;
   left: 0;
@@ -245,4 +244,5 @@ footer .socials a:hover {
 }
 #feedback:hover {
   background-color: #567F3A;
+} background-color: #567F3A;
 }
