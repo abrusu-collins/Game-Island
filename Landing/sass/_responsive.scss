@@ -1,4 +1,11 @@
 //hero responsiveness
+
+@media screen and (max-width:391px) {
+    .c{
+      font-size: 25px;
+      height:75vh;
+    }
+}
 //games section responsiveness
 @media screen and (max-width:992px) {
     .games{
