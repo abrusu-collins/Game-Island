@@ -9,6 +9,7 @@
 .loader {
   font-size: 30px;
   color: #8fbf4d;
+  background-color: #fcfeff;
   position: fixed;
   top: 0;
   left: 0;
@@ -244,5 +245,49 @@ footer .socials a:hover {
 }
 #feedback:hover {
   background-color: #567F3A;
-} background-color: #567F3A;
+}
+
+@media screen and (max-width: 992px) {
+  .games {
+    width: 90%;
+  }
+  .games .gamesinner {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 927px) {
+  .games {
+    width: 90%;
+  }
+  .games .gamesinner {
+    width: 75%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 766px) {
+  .games {
+    width: 90%;
+  }
+  .games .gamesinner {
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 636px) {
+  .games {
+    width: 95%;
+  }
+  .games .gamesinner {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 560px) {
+  .games {
+    width: 95%;
+  }
+  .games .gamesinner {
+    width: 60%;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

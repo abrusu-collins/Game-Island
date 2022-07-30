@@ -1,0 +1,56 @@
+@media screen and (max-width:992px) {
+    .games{
+        width: 90%;
+        & .gamesinner{
+            width:100%;
+        }
+    }
+}
+
+@media screen and (max-width:927px) {
+    .games{
+        width: 90%;
+
+        & .gamesinner{
+            width:75%;
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+    }
+}
+
+@media screen and (max-width:766px) {
+    .games{
+        width: 90%;
+
+        & .gamesinner{
+            width:90%;
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+    }
+}
+
+@media screen and (max-width:636px) {
+    .games{
+        width: 95%;
+
+        & .gamesinner{
+            width:100%;
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+    }
+}
+
+@media screen and (max-width:560px) {
+    .games{
+        width: 95%;
+
+        & .gamesinner{
+            width:60%;
+            grid-template-columns: repeat(1, 1fr);
+
+        }
+    }
+}
