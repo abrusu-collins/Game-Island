@@ -82,3 +82,12 @@
 }
 
 //footer responsiveness
+
+@media screen and (max-width:582px) {
+    footer{
+flex-direction: column;        
+    }
+    .socials{
+        margin: 20px auto;
+    }
+}

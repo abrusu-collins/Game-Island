@@ -309,3 +309,11 @@ footer .socials a:hover {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+@media screen and (max-width: 582px) {
+  footer {
+    flex-direction: column;
+  }
+  .socials {
+    margin: 20px auto;
+  }
+}
