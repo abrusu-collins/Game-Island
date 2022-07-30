@@ -108,3 +108,24 @@
     font-size: 65px;
   }
 }
+@media screen and (max-width: 649px) {
+  .play {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 444px) {
+  .play {
+    width: 100%;
+  }
+  .play .space h3 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 444px) {
+  .play .space h3 {
+    font-size: 40px;
+  }
+  .play .space h1 {
+    font-size: 70px;
+  }
+}
