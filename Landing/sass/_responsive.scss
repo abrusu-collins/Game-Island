@@ -1,3 +1,5 @@
+//hero responsiveness
+//games section responsiveness
 @media screen and (max-width:992px) {
     .games{
         width: 90%;
@@ -54,3 +56,29 @@
         }
     }
 }
+
+@media screen and (max-width:490px) {
+    .games{
+        width: 95%;
+
+        & .gamesinner{
+            width:70%;
+            grid-template-columns: repeat(1, 1fr);
+
+        }
+    }
+}
+
+@media screen and (max-width:390px) {
+    .games{
+        width: 95%;
+
+        & .gamesinner{
+            width:80%;
+            grid-template-columns: repeat(1, 1fr);
+
+        }
+    }
+}
+
+//footer responsiveness
