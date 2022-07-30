@@ -46,7 +46,10 @@ function shuffle(array) {
   return array;
 };
 
-
+//remover function 
+function remover(){
+  console.log("event removed");
+}
 //play eventListener
 play.addEventListener("click",(e)=>{
   e.preventDefault();
