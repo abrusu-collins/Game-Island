@@ -52,3 +52,11 @@
         }
     }
 }
+
+//modal responsiveness
+@media screen and (max-width:508px) {
+    .modal .modalinner{
+        width:60%;
+    }
+    
+}
