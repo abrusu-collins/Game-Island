@@ -98,3 +98,13 @@
     width: 80%;
   }
 }
+@media screen and (max-width: 462px) {
+  .rules {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .hero h1 {
+    font-size: 65px;
+  }
+}
