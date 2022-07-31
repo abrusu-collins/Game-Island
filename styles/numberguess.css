@@ -97,6 +97,43 @@
   background-color: rgba(0, 0, 0, 0.85);
 }
 
+@media screen and (max-width: 917px) {
+  .rules {
+    width: 70%;
+  }
+  .input {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .rules {
+    width: 80%;
+  }
+  .input {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 491px) {
+  .rules {
+    width: 90%;
+  }
+  .input {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 340px) {
+  #header {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .modal .modalinner {
+    width: 60%;
+  }
+  .modal {
+    height: 110vh;
+  }
+}
 @media screen and (max-width: 508px) {
   .modal .modalinner {
     width: 60%;
