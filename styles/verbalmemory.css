@@ -168,3 +168,16 @@
     font-size: 14px;
   }
 }
+@media screen and (max-width: 508px) {
+  .modal .modalinner {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 350px) {
+  .modal {
+    height: 102.5vh;
+  }
+  .modal .modalinner {
+    width: 70%;
+  }
+}
