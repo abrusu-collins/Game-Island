@@ -137,3 +137,34 @@
     width: 30%;
   }
 }
+@media screen and (max-width: 911px) {
+  .scoreandlives, .controls {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 689px) {
+  .scoreandlives, .controls {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 548px) {
+  .scoreandlives, .controls {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 429px) {
+  .scoreandlives, .controls {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 352px) {
+  .scoreandlives, .controls {
+    width: 85%;
+  }
+  .controls {
+    margin-bottom: 15px;
+  }
+  .word {
+    font-size: 14px;
+  }
+}
