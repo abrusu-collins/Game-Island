@@ -15,6 +15,7 @@ var i = 0;
 var j = 0;
 
 function initiate(e) {
+  word.innerHTML=`<i class="fa fa-spinner fa-pulse"></i>`;
   fetch("https://random-word-api.herokuapp.com/word?number=5",{
     mode: 'cors'
   })
@@ -112,7 +113,8 @@ function initiate(e) {
       }
     }).catch((error)=>{
         if(idstart.innerText!="RESTART"){
-    alert(`Error:${error}`)}})
+    word.textContent="Failed to fetch word, check your internet connection.";
+  }})
 }
 
 document.addEventListener("keydown", (e) => {
@@ -120,7 +122,7 @@ document.addEventListener("keydown", (e) => {
     if (input.value === word.textContent) {
       score++;
       scorediv.innerText = `Score:${score}/5`;
-      word.innerText = "loading...";
+      word.innerHTML=`<i class="fa fa-spinner fa-pulse"></i>`;
       input.value = "";
     } else {
       input.value = "";
