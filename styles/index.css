@@ -143,6 +143,10 @@ nav.scrolled {
     display: block;
   }
 }
+.background {
+  background: #8fbf4d;
+}
+
 /*end of navbar*/
 .c img {
   width: 40%;

@@ -13,6 +13,8 @@ window.onscroll = function() {
 
 document.querySelector('.toggler').onclick = () => {
   document.querySelector('.nav').classList.toggle('open');
+  document.querySelector('.nav').classList.toggle('background');
+
 }
 
 
