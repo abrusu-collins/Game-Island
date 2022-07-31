@@ -1,0 +1,19 @@
+//header responsiveness
+//game area responsiveness
+//modal responsiveness
+@media screen and (max-width:508px) {
+    .modal .modalinner{
+        width:60%;
+    }
+    
+}
+@media screen and (max-width:350px) {
+    .modal{
+        height: 100vh + 2.5vh;
+
+    }
+    .modal .modalinner{
+        width:70%;
+    }
+    
+}
