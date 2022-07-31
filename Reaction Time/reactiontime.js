@@ -1,4 +1,5 @@
 let greenclick;
+let firstDate;
 let count=0;
 let start = document.getElementById("start");
 let red=`<div class="red" id="red">
@@ -32,7 +33,7 @@ function initiate(e){
 function displayscore(e){
     e.preventDefault();
     let restart =` <div class="restart">
-<h1>${Math.abs((+Date.now() - firstDate)-200)}ms</h1>
+<h1>${Math.abs((+Date.now() - firstDate)-250)}ms</h1>
 <a href="">Restart</a>
 </div>`;
     document.body.innerHTML=restart;
