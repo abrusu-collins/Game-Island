@@ -45,7 +45,7 @@ function shuffle(array) {
   }
   return array;
 };
-
+navigator.virtualKeyboard.overlaysContent = true;
 //remover function 
 function remover(){
   console.log("event removed");
@@ -53,6 +53,10 @@ function remover(){
 //play eventListener
 play.addEventListener("click",(e)=>{
   e.preventDefault();
+  if ('virtualKeyboard' in navigator) {
+    console.log("found keyboard");
+    navigator.virtualKeyboard.show();
+  }
   space.innerHTML=`<h3>Get Ready!</h3>`;
   setTimeout(()=>{
     numchange();
