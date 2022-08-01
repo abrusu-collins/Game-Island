@@ -70,6 +70,7 @@ play.addEventListener("click",(e)=>{
        <a href="" id="restart">Restart</a>
        </div>
    </div>`;
+   window.scrollTo(0,0);
    document.body.classList.add("scrolldisable");
    restart= document.getElementById("restart");
    time++;
@@ -96,6 +97,8 @@ play.addEventListener("click",(e)=>{
        <a href="" id= "restart">Restart</a>
        </div>
    </div>`;
+   window.scrollTo(0,0);
+   document.body.classList.add("scrolldisable");
    restart= document.getElementById("restart");
 
 
