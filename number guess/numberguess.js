@@ -28,8 +28,8 @@ function shuffle(array) {
     }
     shuffle(numArray);
     num= numArray[0];
-    console.log(numArray);
-    console.log(num);
+    // console.log(numArray);
+    // console.log(num);
   });
 
 
