@@ -67,6 +67,7 @@ function shuffle(array) {
                <a href="">Restart</a>
             </div>
         </div>`;
+        document.body.classList.add("scrolldisable");
   
 
 
