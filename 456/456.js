@@ -5,6 +5,7 @@ let space= document.getElementById("space");
 let num= document.getElementById("num");
 let game= document.getElementById("game");
 let placeholder = document.getElementById("placeholder");
+let inp=document.getElementById("inp");
 let numtodisplay;
 let numcount;
 let elementtodisplay;
@@ -45,7 +46,7 @@ function shuffle(array) {
   }
   return array;
 };
-navigator.virtualKeyboard.overlaysContent = true;
+
 //remover function 
 function remover(){
   console.log("event removed");
@@ -53,10 +54,7 @@ function remover(){
 //play eventListener
 play.addEventListener("click",(e)=>{
   e.preventDefault();
-  if ('virtualKeyboard' in navigator) {
-    console.log("found keyboard");
-    navigator.virtualKeyboard.show();
-  }
+  inp.focus();
   space.innerHTML=`<h3>Get Ready!</h3>`;
   setTimeout(()=>{
     numchange();
