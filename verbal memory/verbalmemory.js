@@ -118,6 +118,8 @@ function lifereducer() {
        <a href="">Restart</a>
     </div>
 </div>`;
+window.scrollTo(0,0);
+
 document.body.classList.add("scrolldisable");
 
   }
