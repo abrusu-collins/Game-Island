@@ -57,7 +57,7 @@
 }
 
 .guides {
-  width: 30%;
+  width: 100%;
   margin: -20px auto 12px auto;
   text-align: center;
 }
@@ -128,11 +128,6 @@
 @media screen and (max-width: 340px) {
   #header {
     font-size: 35px;
-  }
-}
-@media screen and (max-width: 649px) {
-  .guides {
-    width: 50%;
   }
 }
 @media screen and (max-width: 769px) {
