@@ -88,6 +88,13 @@
   background-color: rgba(204, 243, 129, 0.8);
 }
 
+#inp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+}
+
 .modal {
   font-family: sf-ui-regular;
   color: #ccf381;
