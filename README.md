@@ -7,6 +7,6 @@ A website which contains different  memory games
 5. Number guessing game✔
 6. Verbal memory ✔
 
- <p>Finish match the pairs</p>
+ <p>Live site at https://game-island.netlify.app/</p>
 
  
