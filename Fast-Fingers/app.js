@@ -119,7 +119,7 @@ function initiate(e) {
 
 document.addEventListener("keydown", (e) => {
   if (e.keyCode === 13) {
-    if (input.value === word.textContent) {
+    if (input.value.toLowerCase() === word.textContent) {
       score++;
       scorediv.innerText = `Score:${score}/5`;
       word.innerHTML=`<i class="fa fa-spinner fa-pulse"></i>`;
