@@ -34,6 +34,16 @@
         font-size: 35px;
     }
 }
+
+//guide responsiveness
+@media screen and (max-width:649px) {
+    .guides{
+       width:50%;
+    }
+    
+}
+
+
 //modal responsiveness
 @media screen and (max-width:769px) {
     .modal .modalinner{
