@@ -69,7 +69,8 @@ play.addEventListener("click",(e)=>{
        <h3>Score : ${score}</h3>
        <a href="" id="restart">Restart</a>
        </div>
-   </div>`
+   </div>`;
+   document.body.classList.add("scrolldisable");
    restart= document.getElementById("restart");
    time++;
    clearInterval(interval);
