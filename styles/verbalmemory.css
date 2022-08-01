@@ -68,6 +68,10 @@
   border-radius: 5px;
 }
 
+.scrolldisable {
+  overflow: hidden;
+}
+
 .modal {
   height: 100vh;
   width: 100%;
@@ -162,7 +166,7 @@
     width: 85%;
   }
   .controls {
-    margin-bottom: 15px;
+    margin-bottom: 25px;
   }
   .word {
     font-size: 14px;
